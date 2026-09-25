@@ -1,6 +1,6 @@
 import { SampleDatasetInfo, DataHealthResult, ForecastResponse, SimulatedPoint } from '../types/analytics';
 
-const API_BASE = 'https://ricozpredict.onrender.com';
+const API_BASE = 'https://ricozpredict.onrender.com/api';
 export async function fetchSampleDatasets(): Promise<SampleDatasetInfo[]> {
   const res = await fetch(`${API_BASE}/samples`);
   if (!res.ok) throw new Error('Failed to fetch sample datasets.');
